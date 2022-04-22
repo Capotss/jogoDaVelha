@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Jogo da velha</title>
+</head>
+
+<body>
+    <h1>Jogo da velha</h1>
+    <div class="container">
+        <div class="stage">
+            <div class="row">
+                <div id="0" class="square"></div>
+                <div id="1" class="square"></div>
+                <div id="2" class="square"></div>
+            </div>
+            <div class="row">
+                <div id="3" class="square"></div>
+                <div id="4" class="square"></div>
+                <div id="5" class="square"></div>
+            </div>
+            <div class="row">
+                <div id="6" class="square"></div>
+                <div id="7" class="square"></div>
+                <div id="8" class="square"></div>
+            </div>
+            <button id="btn" onclick="reset()">RESET</button>
+        </div>
+        <div id="userInterface">
+            <h2 class="subHeaders">Ativar/Desativar BOT</h2>
+            <div><button id="bot" onclick="botOnOffSwitch(); botFunc()">👨‍🦲</button></div>
+        </div>
+        <div id="placar">PONTOS <p id="pBola">🔵 - </p>
+            <p id="pX">❌ - </p>
+        </div>
+    </div>
+    <div class="vitoria"></div>
+
+
+
+    <script src="./script/interface.js"></script>
+    <script src="./script/game.js"></script>
+</body>
+
+</html>

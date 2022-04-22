@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+#userInterface{
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    background-color: crimson;
+    width: 400px;
+    height: fit-content;
+    position: relative;
+    left: 10%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.8);
+
+}
+#bot, #player{
+    align-self:flex-start;
+    background-color: crimson;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin-top: 35px;
+    font-size: 4rem;
+    transition: background-color 0.8s ease;
+}
+#bot:hover, #player:hover{
+    background-color: rgb(138, 13, 38);
+    cursor: pointer;
+}
+.subHeaders{
+    position: absolute;
+    font-size: 2rem;
+}
+.stage{
+    order: 1;
+}
+#placar{
+    position: relative;
+    right:10%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.8);
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 20px;
+    gap: 20px;
+    order: 2;
+    height: 210px;
+}
+.teste{
+    width:400px;
+    height: 400px;
+    background-color:rgba(255, 0, 85, 0.753);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: background-color 0.8s ease;
+    transform: translateX(-50%);
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: crimson;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.8s ease-out;
+}
+.square:hover{
+    background-color: rgb(138, 13, 38);
+}
+.x::after{
+    content: "❌";
+    font-size: 50px;
+}
+.o::after{
+    content: "🔵" ;
+    font-size: 50px;
+}
+#btn{
+    margin-bottom: 10px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.8);
+    transition: background-color 1s ease;
+}
+#btn:hover{
+    background-color: rgb(138, 13, 38);
+}
+p{
+    font-weight: bolder;
+    font-size: 30px;
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
