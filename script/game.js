@@ -134,7 +134,7 @@ let botFunc = () => {
                 return gameOver
             }
 
-        }, 500);
+        }, 150);
     }
 
 }
